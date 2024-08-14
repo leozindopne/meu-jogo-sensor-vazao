@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Sensores de Vazão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz sobre Sensores de Vazão</h1>
+        <div id="quiz">
+            <div class="question" id="question"></div>
+            <div class="choices">
+                <button class="choice" id="choice1" onclick="selectAnswer(1)"></button>
+                <button class="choice" id="choice2" onclick="selectAnswer(2)"></button>
+                <button class="choice" id="choice3" onclick="selectAnswer(3)"></button>
+                <button class="choice" id="choice4" onclick="selectAnswer(4)"></button>
+            </div>
+            <button id="next-button" onclick="nextQuestion()">Próxima Pergunta</button>
+            <div id="score" class="hidden">Sua pontuação: <span id="score-value"></span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
